@@ -11,7 +11,7 @@ public class DaoFactory {
 	
 	public IMetaDataRepository getMetaDataRepository()
 	{
-		return null;
+		return metaDataRepository;
 	}
 	
 }

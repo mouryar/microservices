@@ -15,17 +15,14 @@ public class MetaDataService implements IMetaDataService{
 	private DaoFactory daoFactory;
 
 	public Iterable<JobMetadata> getAllJobs() {
-		// TODO Auto-generated method stub
 		return daoFactory.getMetaDataRepository().findAll();
 	}
 
 	public JobMetadata getJobMetaData(int id) {
-		// TODO Auto-generated method stub
 		return daoFactory.getMetaDataRepository().findOne(id);
 	}
 
 	public JobMetadata updateJobMetaData(JobMetadata jobMetaData) {
-		// TODO Auto-generated method stub
 		return daoFactory.getMetaDataRepository().save(jobMetaData);
 	}
 
